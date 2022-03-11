@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --bright-blue: #29a7d9;
+  --light-grey: #d1d1d1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  font-family: "Roboto", "Times New Roman", sans-serif;
+  height: 100%;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  grid-row: 1;
+  background-color: var(--bright-blue);
+  color: #ffffff;
+  font-weight: 700;
+  
+}
+
+.sidebar div {
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.sidebar img {
+  width: 20px;
+  height: auto;
+}
+
+.dash-flex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#dashboard {
+  padding-left: 40px;
+}
+
+#dashboard img {
+  width: 40px;
+  height: auto;
+}
+
+#dashboard h3 {
+  font-size: 24px;
+}
+
+.dash-flex a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.dash-flex a:hover {
+  border-bottom: 3px solid #2b2b2b;
+  font-size: 1.1em;
+}
+
+.dash-flex button {
+  padding: 10px 20px;
+  background-color: var(--bright-blue);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-weight: 700;
+}
+
+.right-side {
+  gap: 20px;
+}
+
+.main-content {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 100px 75px 1fr;
+}
+
+.profile-top {
+  grid-row: 1 / 2;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 20px;
+  font-weight: 700;
+}
+
+.profile-top img {
+  width: 20px;
+  height: 20px;
+}
+
+#search-img {
+  width: 15px;
+  height: 15px;
+}
+
+.profile-top input {
+  flex: .8 1 auto;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--light-grey);
+  padding: 7px;
+  color: #292929;
+  font-weight: 700;
+}
+
+.profile-top input:focus {
+  outline: none;
+}
+
+.profile-pic {
+  background-color: #ff9c24;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 25px;
+}
+
+.profile-pic img {
+  width: 35px;
+  height: 35px;
+}
+
+.profile {
+  justify-content: space-between;
+  padding: 10px 100px;
+  grid-row: 2 / 3;
+}
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+
+.welcome-text a {
+  color: black;
+}
+
+.welcome-text a:hover {
+  color: var(--bright-blue);
+  border: none;
+  font-size: 1em;
+}
+
+.large {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.large img {
+  width: 45px;
+  height: 45px;
+}
+
+.main-section {
+  grid-row: 3 / 4;
+  display: grid;
+  background-color: #cccccc;;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 50px 1fr;
+  box-shadow: 5px 0px 5px var(--light-grey);
+  padding: 10px 25px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  padding: 0px 25px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 1fr .5fr;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  gap: -20px;
+  border-left: 7px solid #ff9c24;
+}
+
+.card .desc {
+  grid-row: 1 / 2;
+  align-self: start;
+}
+
+.buttons {
+  align-self: flex-end;
+  justify-self: end;
+  display: flex;
+  gap: 10px;
+}
+
+.desc :first-child {
+  padding: 10px 0px 20px 0px;
+  font-weight: 700;
+}
+
+.desc :last-child {
+  font-weight: 400;
+  color: #808080;
+}
+
+.buttons img {
+  width: 25px;
+  height: 25px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.trend-card {
+  background-color: #ffffff;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.trending-label {
+  padding: 20px 0px;
+}
+
+.light-text {
+  font-weight: 400;
+  color: #808080;
+  padding-top: 3px;
+}
+
+.trend-card p {
+  font-weight: 400;
+  color: #808080;
+}
+
+.account-card {
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.account-flex {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.account-flex img {
+  width: 25px;
+  height: 25px;
+}
+
+#melman {
+  background-color: var(--bright-blue);
+}
+
+#alex {
+  background-color: #f52a2a;
+}
