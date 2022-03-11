@@ -197,6 +197,7 @@ body {
   padding: 10px 20px;
   gap: -20px;
   border-left: 7px solid #ff9c24;
+  max-height: 300px;
 }
 
 .card .desc {
