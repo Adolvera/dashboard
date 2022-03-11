@@ -19,7 +19,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 4fr;
   font-family: "Roboto", "Times New Roman", sans-serif;
-  height: 100%;
+  height: 100vh;
 }
 
 .sidebar {
